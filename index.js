@@ -15,7 +15,7 @@ app.use(
         credentials: true,
         origin: process.env.NETLIFY_URL || "http://localhost:3000",
     })
-);
+); // make sure cors is used right after creating the app
 const sessionOptions = {
     secret: process.env.SESSION_SECRET || "kanbas",
     resave: false,
